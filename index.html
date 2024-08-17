@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sentiment Analysis Tool</title>
+</head>
+<body>
+    <form method="post">
+        <textarea name="text"></textarea>
+        <button type="submit">Analyze Sentiment</button>
+    </form>
+    {% if sentiment %}
+        <h1>Sentiment: {{ sentiment }}</h1>
+    {% endif %}
+</body>
+</html>
+    
